@@ -1,0 +1,292 @@
+/* variables */
+:root{
+    --bg-color:#ecf2f9;
+    --outer-shadow:3px 3px 3px #fff , -3px -3px 3px #ceced1;
+    --iner-shadow:inset 3px 3px 3px #fff ,inset -3px -3px 3px #ceced1;
+    --color:#000;
+    --main-color:#f56c6f;
+}
+/* global settings */
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    background-color: var(--bg-color);
+    padding: 5rem;
+}
+@media screen and (max-device-width: 667px){
+    body{
+        padding-top: 6rem!important;
+        padding:0;
+    }
+}
+body.dark{
+    --bg-color:#2c2d30;
+    --outer-shadow:3px 3px 3px #202125 , -3px -3px 3px #353535;
+    --iner-shadow:inset 3px 3px 3px #202125 ,inset -3px -3px 3px #353535;
+    --color:#fff;
+    --main-color:#f56c6f;
+}
+.btn{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: var(--main-color);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+    box-shadow: var(--iner-shadow);
+    text-transform: capitalize;
+    background: transparent;
+    text-wrap: nowrap;
+}
+.btn:hover{
+    box-shadow: var(--outer-shadow);
+    
+}
+.massage{
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+}
+/* cusom scroll bar */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+/* pages style */
+.form-container{
+   min-height: 79vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px; 
+}
+.form-container form{
+    background-color: var(--bg-color);
+    box-shadow: var(--outer-shadow);
+    padding: 20px;
+    text-align: center;
+    width: 50vw;
+    border-radius: 10px;
+}
+@media screen and (max-device-width: 667px){
+    .form-container form{
+        width: 80vw;
+    }
+}
+.form-container form h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.form-container form .box{
+    width: 100%;
+    border-radius: 5px;
+    padding:12px 14px;
+    font-size: 18px;
+    color: gray;
+    margin: 10px 0;
+    box-shadow: var(--outer-shadow);
+    background-color: var(--bg-color);
+}
+.form-container form .box:hover{
+    box-shadow: var(--iner-shadow);
+}
+.form-container form p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--color);
+    text-transform: capitalize;
+}
+.form-container form p a{
+    color: var(--main-color);
+}
+.form-container form p a:hover{
+    text-decoration: none;
+}
+/* home page style */
+.container{
+    min-height: 79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.container .profile{
+    padding:20px;
+    background-color: var(--bg-color);
+    box-shadow: var(--outer-shadow); 
+    text-align: center;
+    width: 30vw;
+    border-radius: 5px;
+}
+@media screen and (max-device-width: 667px){
+    .container .profile{
+        width: 80vw;
+    }
+    .container .profile form{
+
+    }
+}
+.container .profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: .5rem;
+    box-shadow: var(--iner-shadow);
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.container .profile h3{
+    margin:5px 0;
+    font-size: 20px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.flex-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-device-width: 667px){
+    .flex-btn{
+       flex-wrap: wrap;
+    }
+}
+.flex-btn .btn{
+    margin: .5rem;
+
+}
+.container .profile p{
+    margin:20px 0;
+    font-size: 20px;
+}
+.container .profile p a{
+    color: #555!important;
+}
+
+.update-profile{
+    min-height: 79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.update-profile form{
+    padding: 20px;
+    box-shadow: var(--outer-shadow);
+    text-align: center;
+    width: 50vw;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+}
+@media screen and (max-device-width: 667px){
+    .update-profile form{
+        width: 90vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.update-profile form img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    padding: .5rem;
+    box-shadow: var(--iner-shadow);
+}  
+@media screen and (max-device-width:"667px"){
+    .update-profile form img{
+        height: 150px;
+        width: 150px;
+    }  
+}
+.update-profile form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+@media screen and  (max-device-width: 667px){
+    .update-profile form .flex{
+       gap: 0;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+    }
+}
+.update-profile form .flex .btn{
+    width: 48%;
+}
+.update-profile form .flex .inputBox{
+    width: 49%;
+}
+@media screen and  (max-device-width: 667px){
+    .update-profile form .flex .inputBox{
+      width: 100%;
+    }
+}
+.update-profile form .flex .inputBox span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color: var(--color);
+    text-transform: capitalize;
+}
+.update-profile form .flex .inputBox .box{
+    width:100%;
+    border-radius: 5px;
+    box-shadow: var(--outer-shadow);
+    padding: 12px 14px;
+    font-size: 17px;
+    color: gray;
+    margin-top:10px;
+    background-color: var(--bg-color);
+}
+.update-profile form .flex .inputBox .box:hover{
+    box-shadow: var(--iner-shadow);
+}
+.day-night{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: var(--main-color);
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    box-shadow: var(--outer-shadow);
+    cursor: pointer;
+}
+@media screen and (max-device-width:"667px"){
+    .day-night{
+        top:3%;
+    }
+}
+.day-night:hover{
+    box-shadow: var(--iner-shadow);
+}

@@ -1,0 +1,75 @@
+/* variables
+:root{
+    --bg-color:#ecf2f9;
+    --outer-shadow:3px 3px 3px #fff , -3px -3px 3px #ceced1;
+    --iner-shadow:inset 3px 3px 3px #fff ,inset -3px -3px 3px #ceced1;
+    --color:#000;
+    --main-color:#f56c6f;
+}
+
+.update-profile{
+    min-height: 79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.update-profile form{
+    padding: 20px;
+    box-shadow: var(--outer-shadow);
+    text-align: center;
+    width: 50vw;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+}
+.update-profile form img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    padding: .5rem;
+    box-shadow: var(--iner-shadow);
+}  
+.update-profile form .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.update-profile form .flex .btn{
+    width: 48%;
+}
+.update-profile form .flex .inputBox{
+    width: 49%;
+}
+.update-profile form .flex .inputBox span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color: var(--color);
+    text-transform: capitalize;
+}
+.update-profile form .flex .inputBox .box{
+    width:100%;
+    border-radius: 5px;
+    box-shadow: var(--outer-shadow);
+    padding: 12px 14px;
+    font-size: 17px;
+    color: gray;
+    margin-top:10px;
+    background-color: var(--bg-color);
+}
+.update-profile form .flex .inputBox .box:hover{
+    box-shadow: var(--iner-shadow);
+} */
+.massage{
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+}
